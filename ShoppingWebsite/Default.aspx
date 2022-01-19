@@ -81,15 +81,15 @@
    
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/MainSliderImages/la.jpg" alt="Los Angeles" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneDarkBlue1.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="images/MainSliderImages/chicago.jpg" alt="Chicago" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneLightBlue1.jpg"  alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="images/MainSliderImages/ny.jpg" alt="New york" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneAll13.jpg"  alt="New york" style="width:100%;">
 
       </div>
     </div>

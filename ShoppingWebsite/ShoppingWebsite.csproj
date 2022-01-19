@@ -101,6 +101,9 @@
     <Content Include="images\CompanyIcons\CsLogo.jpg" />
     <Content Include="images\CompanyIcons\CyberStoreLogo.png" />
     <Content Include="images\MainSliderImages\chicago.jpg" />
+    <Content Include="images\MainSliderImages\iphoneAll13.jpg" />
+    <Content Include="images\MainSliderImages\iphoneDarkBlue1.jpg" />
+    <Content Include="images\MainSliderImages\iphoneLightBlue1.jpg" />
     <Content Include="images\MainSliderImages\la.jpg" />
     <Content Include="images\MainSliderImages\ny.jpg" />
     <Content Include="Web.config" />
