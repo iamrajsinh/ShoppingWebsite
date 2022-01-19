@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Radio Space';
+	src: url(../../assets/fonts/RadioSpace.woff2) format('woff2'),
+	url(../../assets/fonts/RadioSpace.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
