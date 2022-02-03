@@ -13,7 +13,8 @@
 
             
 <div>
-    <!--navigation bar-->
+       <%--navigation bar--%>
+
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -66,7 +67,7 @@
     </div>
 
 
-    <!--main image slider-->
+    <%--main image slider--%>
 
     <div class="container">
   <h2>Carousel Example</h2>  
@@ -100,7 +101,7 @@
           <img src="images/MainSliderImages/iphoneAll13.jpg"  alt="New york" style="width:100%;">
           <div class="carousel-caption">
           <h3></h3>
-          <p></p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
         </div>
 
       </div>
@@ -115,10 +116,11 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
-
-
 </div>
+
+     <%--    featured category tiles--%>
+
+
 
 </form>
 
