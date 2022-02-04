@@ -119,6 +119,17 @@
         
 
 
+            <hr />
+    <footer class="footer-pos">
+            <div class ="container ">
+               
+ 
+                <p>&copy;2022 CyberShop &middot; All rights reserved &middot; 
+                    <a href ="#"> Terms & Conditions </a>&middot;
+                    <a href ="#"> About </a>&middot;<a href ="#"> Contact </a> </p>
+            </div>
+
+        </footer>
     </form>
 </body>
 </html>

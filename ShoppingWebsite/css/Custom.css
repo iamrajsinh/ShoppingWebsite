@@ -7,10 +7,21 @@
     width: 300px;
     height: 300px;
     position: absolute;
-    top: -40px;
+    top: -100px;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     
+}
+
+.footer-pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 700px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
 }
