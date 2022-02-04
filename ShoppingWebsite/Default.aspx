@@ -39,7 +39,6 @@
                 <li class="active"><a href="Default.aspx">HOME</a> </li>
                 <li><a href="#">ABOUT</a> </li>
                 <li><a href="#">CONTACT</a> </li>
-                <li><a href="#">BLOG</a> </li>
                 <li class="drodown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
@@ -156,7 +155,20 @@
             
         </div>
 
+        </div>
 
+    <hr />
+    <footer>
+            <div class ="container ">
+               
+                <p class ="pull-right "><a href ="#">&middot; &nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
+                <p class ="pull-right "><a href="#"> Admin Login &nbsp; &nbsp;</a></p>  
+                <p>&copy;2022 CyberShop &middot; All rights reserved &middot; 
+                    <a href ="#"> Terms & Conditions </a>&middot;
+                    <a href ="#"> About </a>&middot;<a href ="#"> Contact </a> </p>
+            </div>
+
+        </footer>
 
 </form>
 
