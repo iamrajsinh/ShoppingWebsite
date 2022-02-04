@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="css/Custom.css" rel="stylesheet" />
+
 </head>
 <body>
         <form id="form1" runat="server">
@@ -27,7 +30,7 @@
                         </button>
 
                     <a class="navbar-brand" href="Default.aspx"><span>
-                        <img src="icons/CsLogo.jpg" alt="MyEShoppoing" height="30" /> CybeerShop</span>
+                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CybeerShop</span>
                     </a>
     </div>
       
@@ -69,7 +72,7 @@
 
     <%--main image slider--%>
 
-    <div class="container">
+    <div class="container" >
   <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
@@ -119,6 +122,39 @@
 </div>
 
      <%--    featured category tiles--%>
+        <hr />
+    
+    <div class="container center">
+        <div class="row ">
+            <div class="col-lg-4">
+                <img class="img-circle " src="images/featuredcategory/graphicsCardCategory.jpg" alt="thumb" width="140" height="140" />
+                <h2>
+                    Graphics Cards</h2>
+                <p>
+                    </p>
+                <p>
+                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-circle " src="images/featuredcategory/mobileCategory.png" alt="thumb" width="140" height="140" />
+                <h2>
+                    Mobile Phones</h2>
+                <p>
+                    </p>
+                <p>
+                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-circle " src="images/featuredcategory/accessoriesCategory.jpg" alt="thumb" width="140" height="140" />
+                <h2>
+                    Accesories</h2>
+                <p>
+                    </p>
+                <p>
+                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+            </div>
+            
+        </div>
 
 
 
