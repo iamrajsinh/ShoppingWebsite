@@ -2,3 +2,15 @@
     text-align: center;
     
 }
+
+.center-page {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
