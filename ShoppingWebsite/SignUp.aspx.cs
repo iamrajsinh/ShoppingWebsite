@@ -66,6 +66,7 @@ namespace ShoppingWebsite
             {
                 lblMsg.ForeColor = System.Drawing.Color.Red;
                 lblMsg.Text = "Please enter your password.";
+                ClrPS();
                 tbPassword.Focus();
                 return false;
             }
@@ -73,6 +74,7 @@ namespace ShoppingWebsite
             {
                 lblMsg.ForeColor = System.Drawing.Color.Red;
                 lblMsg.Text = "Password doesn't match, please enter matching passwords";
+                ClrPS();
                 tbCPassword.Focus();
 
                 return false;
@@ -113,6 +115,12 @@ namespace ShoppingWebsite
             tbEmail.Text = string.Empty;
             tbName.Text = string.Empty;
         }
+        private void ClrPS()
+        {
+
+            tbPassword.Text = string.Empty;
+        }
+
 
 
 
