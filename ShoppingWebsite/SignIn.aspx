@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ShoppingWebsite.SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="ShoppingWebsite.SignIn" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sign Up | CyberShop</title>
+    <title>Sign In | CyberShop</title>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale="/>
@@ -17,7 +17,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-
             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -61,70 +60,83 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="SignUp.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li class="active"><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
       </div>
     </div>
-
-
         </div>
 
-        <%--SignUp Form--%>
 
-        <div class ="center-page">
-
-            <div class="col-xs-11">
-            <h2>Sign Up</h2>
-             <hr />
-            </div>
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbUsername" runat="server" Class="form-control" placeholder="Enter your username "></asp:TextBox>
-                <br />
-            </div>
-
-            
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" Class="form-control" placeholder="Enter your password"></asp:TextBox>
-                <br />
-            </div>
+        <%--SignIn form--%>
+        <div class ="center-page"
+        <div class ="container ">
+            <div class ="form-horizontal ">
 
 
+                <h2>Login</h2>
+                <hr />
 
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbCPassword" runat="server" TextMode="Password" Class="form-control" placeholder="Confirm your password"></asp:TextBox>
-                <br />
-            </div>
+                <div class ="form-group">
+                    <div class ="col-xs-11 ">
+
+                        <asp:TextBox ID="tbUsername" CssClass="form-control" runat="server" placeholder="Enter your username"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" CssClass ="text-danger " ErrorMessage="*Please enter your username" ControlToValidate="tbUsername" ForeColor="Red" Visible="false"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
 
 
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbEmail" runat="server" Class="form-control" placeholder="Enter your email"></asp:TextBox>
-                <br />
+                <div class ="form-group">
+                    <div class ="col-xs-11 ">
+
+                        <asp:TextBox ID="tbPassword" CssClass="form-control" runat="server" TextMode="Password"  placeholder="Enter your password" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass ="text-danger " runat="server" ErrorMessage="Please enter your password" ControlToValidate="tbPassword" ForeColor="Red" Visible="false"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+
+
+                <div class ="form-group">
+                    <div class ="col-xs-7 "> </div>
+                    <div class ="col-xs-10 ">
+
+                        <asp:CheckBox ID="CheckBox1" runat="server" />
+                        <asp:Label ID="Label3" CssClass =" control-label " runat="server" Text="Remember me"></asp:Label>
+                    </div>
+                </div>
+
+
+                <div class ="form-group">
+                    <div class ="col-xs-7 "> </div>
+                    <div class ="col-xs-10 ">
+
+                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary " runat="server" Text="Login" />
+                        
+                    </div>
+                </div>
                 
-            </div>
+                
 
 
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbName" runat="server" Class="form-control" placeholder="Enter your name"></asp:TextBox>
-                <br />
+
+
+                 <div class ="form-group">
+                    <div class ="col-md-2 "> </div>
+                    <div class ="col-md-6 ">
+
+                        <asp:Label ID="lblError" CssClass ="text-danger " runat="server" ></asp:Label>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="col-xs-11">
-                 <asp:Button ID="btnSignUp" Class="btn btn-primary" runat="server" Text="Sign up" OnClick="btnSignUp_Click" />
             </div>
-
-            <div class="col-xs-11">
-                 <asp:Label ID="lblMsg" runat="server" Text=""></asp:Label>
-            </div>
-            
-            </div>
-        
+        </div>
 
         <%--footer--%>
-            <hr />
+
+                    <hr />
     <footer class="footer-pos">
             <div class ="container ">
                
@@ -135,8 +147,6 @@
             </div>
 
         </footer>
-
-
 
     </form>
 </body>

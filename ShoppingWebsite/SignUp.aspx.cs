@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
+
 namespace ShoppingWebsite
 {
     public partial class SignUp : System.Web.UI.Page
