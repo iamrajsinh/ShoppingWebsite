@@ -15,6 +15,8 @@ namespace ShoppingWebsite
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
         }
 
         protected void btnSignUp_Click(object sender, EventArgs e)
@@ -27,15 +29,20 @@ namespace ShoppingWebsite
                     SqlCommand cmd = new SqlCommand("Insert into tblUsers(Username,Password,Email,Name) Values('" + tbUsername.Text + "','" + tbPassword.Text + "','" + tbEmail.Text + "','" + tbName.Text + "')", con);
                     cmd.ExecuteNonQuery();
 
-                    Response.Write("<script> alert('Registration Successful! CyberShop Welcomes You');  </script>");
-                    clr();
+
+                    Clr();
                     con.Close();
-                    
+                    lblMsg.ForeColor = System.Drawing.Color.Green;
+                    lblMsg.Text = "Registration Successful! CyberShop Welcomes You";
+
+
 
                 }
                 
             }
-            
+
+
+
 
         }
 
@@ -44,40 +51,61 @@ namespace ShoppingWebsite
         {
             if (tbUsername.Text == "")
             {
-                Response.Write("<script> alert('Please enter your username.');  </script>");
+                lblMsg.ForeColor = System.Drawing.Color.Red;
+                lblMsg.Text = "Please enter your username.";
                 tbUsername.Focus();
+                string Password = tbPassword.Text;
+                tbPassword.Attributes.Add("value", Password);
+
+                string CPassword = tbCPassword.Text;
+                tbCPassword.Attributes.Add("value", CPassword);
 
                 return false;
             }
             else if (tbPassword.Text == "")
             {
-                Response.Write("<script> alert('Please enter your password.');  </script>");
+                lblMsg.ForeColor = System.Drawing.Color.Red;
+                lblMsg.Text = "Please enter your password.";
                 tbPassword.Focus();
                 return false;
             }
             else if (tbPassword.Text != tbCPassword.Text)
             {
-                Response.Write("<script> alert('Please enter matching password for conformation.');  </script>");
+                lblMsg.ForeColor = System.Drawing.Color.Red;
+                lblMsg.Text = "Password doesn't match, please enter matching passwords";
                 tbCPassword.Focus();
+
                 return false;
             }
             else if (tbEmail.Text == "")
             {
-                Response.Write("<script> alert('Please enter your email.');  </script>");
+                lblMsg.ForeColor = System.Drawing.Color.Red;
+                lblMsg.Text = "Please enter your email.";
                 tbEmail.Focus();
+                string Password = tbPassword.Text;
+                tbPassword.Attributes.Add("value", Password);
+
+                string CPassword = tbCPassword.Text;
+                tbCPassword.Attributes.Add("value", CPassword);
                 return false;
             }
             else if (tbName.Text == "")
             {
-                Response.Write("<script> alert('Please enter your name');  </script>");
+                lblMsg.ForeColor = System.Drawing.Color.Red;
+                lblMsg.Text = "Please enter your name.";
                 tbName.Focus();
+                string Password = tbPassword.Text;
+                tbPassword.Attributes.Add("value", Password);
+
+                string CPassword = tbCPassword.Text;
+                tbCPassword.Attributes.Add("value", CPassword);
                 return false;
             }
 
 
             return true;
         }
-        private void clr()
+        private void Clr()
         {
             tbUsername.Text = string.Empty;
             tbPassword.Text = string.Empty;
@@ -85,5 +113,8 @@ namespace ShoppingWebsite
             tbEmail.Text = string.Empty;
             tbName.Text = string.Empty;
         }
+
+
+
     }
 }
