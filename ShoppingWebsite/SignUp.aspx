@@ -6,9 +6,9 @@
 <head runat="server">
     <title>Sign Up | CyberShop</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale="/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -101,18 +101,18 @@
 
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbName" runat="server" Class="form-control" placeholder="Enter your full name"></asp:TextBox>
-                <br />
-            </div>
-
-
-            <div class="col-xs-11">
             <asp:TextBox ID="tbEmail" runat="server" Class="form-control" placeholder="Enter your email"></asp:TextBox>
                 <br />
             </div>
 
+
             <div class="col-xs-11">
-                 <asp:Button ID="btnSignUp" Class="btn btn-primary" runat="server" Text="Sign up" />
+            <asp:TextBox ID="tbName" runat="server" Class="form-control" placeholder="Enter your name"></asp:TextBox>
+                <br />
+            </div>
+
+            <div class="col-xs-11">
+                 <asp:Button ID="btnSignUp" Class="btn btn-primary" runat="server" Text="Sign up" OnClick="btnSignUp_Click" />
             </div>
             
             </div>
@@ -130,6 +130,9 @@
             </div>
 
         </footer>
+
+
+
     </form>
 </body>
 </html>

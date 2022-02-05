@@ -51,15 +51,6 @@ namespace ShoppingWebsite
         protected global::System.Web.UI.WebControls.TextBox tbCPassword;
 
         /// <summary>
-        /// tbName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbName;
-
-        /// <summary>
         /// tbEmail control.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,15 @@ namespace ShoppingWebsite
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbEmail;
+
+        /// <summary>
+        /// tbName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbName;
 
         /// <summary>
         /// btnSignUp control.
