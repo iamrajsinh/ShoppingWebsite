@@ -107,7 +107,7 @@
                         <asp:Label ID="Label3" CssClass =" control-label " runat="server" Text="Remember me"></asp:Label>
                     </div>
                 </div>
-
+                ;
 
                 <div class ="form-group">
                     <div class ="col-xs-7 "> </div>

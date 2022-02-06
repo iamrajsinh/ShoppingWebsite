@@ -12,8 +12,19 @@ namespace ShoppingWebsite
 {
     public partial class SignIn : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e) 
         {
+
+            if (!IsPostBack)
+            {
+                if (Request.Cookies["UNAME"] != null && Request.Cookies["UPWD"] != null)
+                {
+                    tbUsername.Text = Request.Cookies["UNAME"].Value;
+                    tbPassword.Text = Request.Cookies["UPWD"].Value;
+                    CheckBox1.Checked = true;
+
+                }
+            }
 
         }
 
@@ -31,6 +42,24 @@ namespace ShoppingWebsite
                 sda.Fill(dt);
                 if (dt.Rows.Count != 0)
                 {
+
+                    if (CheckBox1.Checked)
+                    {
+                        Response.Cookies["UNAME"].Value = tbUsername.Text;
+                        Response.Cookies["UPWD"].Value = tbPassword.Text;
+
+                        Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(10);
+
+                        Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(10);
+
+                    }
+                    else
+                    {
+                        Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(-1);
+
+                        Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(-1);
+                    }
+
                     Session["Username"] = tbUsername.Text;
                     Response.Redirect("UserHome.aspx");
                 }
