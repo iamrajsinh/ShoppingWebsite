@@ -63,8 +63,8 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li class="active"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
+                <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in btn-primary btn-outline"></span> Login</a></li>
             </ul>
         </div>
       </div>
@@ -119,7 +119,7 @@
             </div>
 
             <div class="col-xs-11">
-                 <asp:Label ID="lblMsg" runat="server" Text=""></asp:Label>
+                 <asp:Label ID="lblMsg" runat="server" ></asp:Label>
             </div>
             
             </div>

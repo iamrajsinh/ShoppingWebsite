@@ -63,8 +63,8 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="SignUp.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li class="active"><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
+                <li class="active"><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in btn-primary btn-outline"></span> Login</a></li>
             </ul>
         </div>
       </div>
@@ -124,12 +124,13 @@
 
 
                  <div class ="form-group">
-                    <div class ="col-md-2 "> </div>
-                    <div class ="col-md-6 ">
+                    <div class ="col-xs-7 "> </div>
+                    <div class ="col-xs-10 ">
 
                         <asp:Label ID="lblError" CssClass ="text-danger " runat="server" ></asp:Label>
                     </div>
                 </div>
+
 
 
             </div>

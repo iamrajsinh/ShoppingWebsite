@@ -31,7 +31,12 @@ namespace ShoppingWebsite
                 sda.Fill(dt);
                 if (dt.Rows.Count != 0)
                 {
+                    Session["Username"] = tbUsername.Text;
                     Response.Redirect("UserHome.aspx");
+                }
+                else
+                {
+                    lblError.Text = "Invalid username & password";
                 }
 
 
