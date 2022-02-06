@@ -17,6 +17,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+
+            <%--navigation bar--%>
+
             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -110,7 +113,7 @@
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
-                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary " runat="server" Text="Login" />
+                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary " runat="server" Text="Login" OnClick="btnLogin_Click" />
                         
                     </div>
                 </div>
