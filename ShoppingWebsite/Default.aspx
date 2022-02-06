@@ -84,7 +84,7 @@
    
     <div class="carousel-inner">
       <div class="item active">
-          <img src="images/MainSliderImages/iphoneDarkBlue1.jpg" alt="Los Angeles" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneDarkBlue1.jpg" alt="Iphone 13 Midnight Blue" style="width:100%;">
           <div class="carousel-caption">
           <h3>Iphone 13 Midnight</h3>
           <p>Midnight blue is a dark shade of blue named for its resemblance to the identifiably blue color of a moonlit night sky on or near the night of a full moon.</p>
@@ -92,7 +92,7 @@
       </div>
 
       <div class="item">
-          <img src="images/MainSliderImages/iphoneLightBlue1.jpg"  alt="Chicago" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneLightBlue1.jpg"  alt="Iphone 13 Sierra Blue" style="width:100%;">
           <div class="carousel-caption">
           <h3>Iphone 13 Blue</h3>
           <p>It's a much lighter and brighter shade of blue than the Pacific blue of last year, which in some lighting would be so similar to graphite you could barely tell them apart.</p>
@@ -100,7 +100,7 @@
       </div>
     
       <div class="item">
-          <img src="images/MainSliderImages/iphoneAll13.jpg"  alt="New york" style="width:100%;">
+          <img src="images/MainSliderImages/iphoneAll13.jpg"  alt="And More" style="width:100%;">
           <div class="carousel-caption">
           <h3></h3>
           <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
@@ -157,7 +157,10 @@
 
         </div>
 
-    <%--footer--%>
+  
+    </div>
+</form>
+      <%--footer--%>
 
     <hr />
     <footer>
@@ -171,8 +174,6 @@
             </div>
 
         </footer>
-    </div>
-</form>
 
 </body>
 </html>
