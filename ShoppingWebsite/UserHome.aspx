@@ -67,7 +67,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     
-                    <asp:Button ID="btnLogout" CssClass ="btn btn-warning btn-outline navbar-btn " runat="server" Text="Log out" />
+                    <asp:Button ID="btnLogout" CssClass ="btn btn-warning btn-outline navbar-btn " runat="server" Text="Log out" onClick="btnlogout_Click"/>
                    &nbsp;
                 </li>
                 

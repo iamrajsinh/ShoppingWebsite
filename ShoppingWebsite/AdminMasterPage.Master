@@ -63,6 +63,11 @@
     
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-tasks btn-primary btn-outline"></span> Manage</a></li>
+                <li>
+                    
+                    <asp:Button ID="btnAdminLogout" CssClass ="btn btn-warning btn-outline navbar-btn " runat="server" Text="Log out" onClick="btnAdminlogout_Click"/>
+                   &nbsp;
+                </li>
 
             </ul>
         </div>

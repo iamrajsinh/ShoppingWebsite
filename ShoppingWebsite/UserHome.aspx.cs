@@ -25,5 +25,11 @@ namespace ShoppingWebsite
             }
 
         }
+        protected void btnlogout_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("~/SignIn.aspx");
+            Session["Username"] = null;
+        }
     }
 }
