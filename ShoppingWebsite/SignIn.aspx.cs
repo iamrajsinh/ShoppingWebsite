@@ -14,6 +14,7 @@ namespace ShoppingWebsite
     {
         protected void Page_Load(object sender, EventArgs e) 
         {
+            tbUsername.Focus();
 
             if (!IsPostBack)
             {

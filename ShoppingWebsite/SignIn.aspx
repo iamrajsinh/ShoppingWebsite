@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="css/LoginStylesheet.css" rel="stylesheet" />
+
+
+
+
   <link href="css/Custom.css" rel="stylesheet" />
 
 </head>
@@ -73,13 +80,21 @@
 
 
         <%--SignIn form--%>
-        <div class ="center-page"
+
+
+        <div class ="center-page">
+            <div class="card">
         <div class ="container ">
             <div class ="form-horizontal ">
 
 
-                <h2>Login</h2>
-                <hr />
+
+
+
+
+
+                <h2 class="login-head">Login</h2>
+               
 
                 <div class ="form-group">
                     <div class ="col-xs-11 ">
@@ -113,11 +128,25 @@
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
-                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary " runat="server" Text="Login" OnClick="btnLogin_Click" />
+                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary" runat="server" Text="Login" OnClick="btnLogin_Click" />
+                        
                         
                     </div>
                 </div>
+
+                </div>
                 
+
+                <%--forget password--%>
+
+                <div class ="form-group">
+                    <div class ="col-xs-7 "> </div>
+                    <div class ="col-xs-10 ">
+                        <asp:HyperLink ID="HyForgotPass" runat="server" NavigateUrl="#">Forgot Password</asp:HyperLink>
+                       
+                    </div>
+                </div>
+
                 
 
 
