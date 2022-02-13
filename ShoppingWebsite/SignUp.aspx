@@ -13,8 +13,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="css/Custom.css" rel="stylesheet" />
 
+    <link href="css/SignupStylesheet.css" rel="stylesheet" />
+
 </head>
-<body>
+<body  class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
@@ -32,16 +34,16 @@
                         </button>
 
                     <a class="navbar-brand" href="Default.aspx"><span>
-                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CyberShop</span>
+                         <span class="brandName">CyberShop</span>
                     </a>
     </div>
       
       <div class="collapse navbar-collapse">>
             <ul class="nav navbar-nav">
-                <li><a href="Default.aspx">HOME</a> </li>
-                <li><a href="#">ABOUT</a> </li>
-                <li><a href="#">CONTACT</a> </li>
-                <li class="drodown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
+                <li  class="menu"><a href="Default.aspx">HOME</a> </li>
+                <li  class="menu"><a href="#">ABOUT</a> </li>
+                <li class="menu"><a href="#">CONTACT</a> </li>
+                <li class="drodown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
                                 <li><a href="#">All Products</a></li>
@@ -76,57 +78,64 @@
         <%--SignUp Form--%>
 
         <div class ="center-page">
+        <div class="card">
+        <div class ="container ">
+            <div class ="form-horizontal ">
 
             <div class="col-xs-11">
-            <h2>Sign Up</h2>
-             <hr />
+            <h2  class="signup-head">Sign Up</h2>
+             
             </div>
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbUsername" runat="server" Class="form-control" placeholder="Enter your username "></asp:TextBox>
+            <asp:TextBox ID="tbUsername" runat="server" style="margin-left: 0px"   CssClass="form-control" placeholder="Enter your username "></asp:TextBox>
                 <br />
             </div>
 
             
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" Class="form-control" placeholder="Enter your password"></asp:TextBox>
+            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Enter your password"></asp:TextBox>
                 <br />
             </div>
 
 
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbCPassword" runat="server" TextMode="Password" Class="form-control" placeholder="Confirm your password"></asp:TextBox>
+            <asp:TextBox ID="tbCPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Confirm your password"></asp:TextBox>
                 <br />
             </div>
 
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbEmail" runat="server" Class="form-control" placeholder="Enter your email"></asp:TextBox>
+            <asp:TextBox ID="tbEmail" runat="server" CssClass="form-control" placeholder="Enter your email"></asp:TextBox>
                 <br />
                 
             </div>
 
 
             <div class="col-xs-11">
-            <asp:TextBox ID="tbName" runat="server" Class="form-control" placeholder="Enter your name"></asp:TextBox>
+            <asp:TextBox ID="tbName" runat="server" CssClass="form-control" placeholder="Enter your name"></asp:TextBox>
                 <br />
             </div>
 
             <div class="col-xs-11">
-                 <asp:Button ID="btnSignUp" Class="btn btn-primary" runat="server" Text="Sign up" OnClick="btnSignUp_Click" />
+                 <asp:Button ID="btnSignUp" CssClass="btn btn-primary" runat="server" Text="Sign up" OnClick="btnSignUp_Click" />
             </div>
 
             <div class="col-xs-11">
-                 <asp:Label ID="lblMsg" runat="server" ></asp:Label>
+                 <asp:Label ID="lblMsg"  CssClass ="errorlabel" runat="server" ></asp:Label>
             </div>
             
             </div>
+            </div>
+                   </div>
+
+        </div>
         
 
         <%--footer--%>
-            <hr />
+ 
     <footer class="footer-pos">
             <div class ="container ">
                

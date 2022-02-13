@@ -97,6 +97,7 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="css\Custom.css" />
     <Content Include="css\LoginStylesheet.css" />
+    <Content Include="css\SignupStylesheet.css" />
     <Content Include="Default.aspx" />
     <Content Include="images\CompanyIcons\CsLogo.jpg" />
     <Content Include="images\CompanyIcons\CyberStoreLogo.png" />
