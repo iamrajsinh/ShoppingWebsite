@@ -1,23 +1,50 @@
-﻿.card {
-    /* Add shadows to create the "card" effect */
+﻿
+.bgCustom{
+    background-color: #1c1c1c;
+
+}
+.menu {
+    font-family: radioSpace;
+
+}
+    .menu:hover {
+        color:aqua;
+    }
+
+.brandName {
+    font-family: radioSpace;
+    font-size: 20px;
+    color: #faf006;
+}
+
+@font-face {
+    font-family: radioSpace;
+    src: url(/assets/fonts/RadioSpace.woff);
+}
+
+.card {
+
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 25px;
+    border-radius: 7px;
+    background-color: rgba(0,0,0,0.2);
 
 }
 
 .login-head {
     margin-left: 0px;
     margin-bottom: 30px;
+    font-family: radioSpace;
+    color: #faf006;
 }
 
 
-    /* On mouse-over, add a deeper shadow */
+
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 0 0 #faf006;
     }
 
-/* Add some padding inside the card container */
+
 .container {
     padding: 10px 25px 25px 25px;
 }
@@ -25,10 +52,76 @@
 .form-control {
     width: 250px;
     border: none;
-    border-radius: 10px;
-    color: gray;
-    background-color: #E1E2E2;
+    border-radius: 5px;
+    color: white;
+    background-color: #1c1c1c;
+/*    font-family:radioSpace;*/
+    /*box-shadow: 0px 1px 0 0 #faf006;*/
+}
+    .form-control:hover {
+        /*        box-shadow: #faf006 300px 0px 0px 0px inset;*/
+        box-shadow: 0 2.1px 0 0 #faf006;
+
+    }
+    .form-control:focus {
+        box-shadow: 0 4px 0 0 #faf006;
+    }
+    ::placeholder{
+        font-family:radioSpace;
+    }
+
+
+
+
+
+#btnLogin {
+    width: 250px;
+    background-color: #161616;
+    border-radius: 5px;
+    border-width: 2.5px;
+    color: #19aebb;
+    font-weight: bold;
+    font-family: radioSpace;
+    font-size: 20px;
+    border-color: #19aebb;
+}
+    #btnLogin:hover {
+        transition: 0.5s;
+        box-shadow: #19aebb 300px 0px 0px 0px inset;
+        color: #161616;
+        font-weight:bold;
+    }
+
+
+.hi {
+    margin: 200px 200px 100px 1600px;
+    font-size: 150px;
+    font-family: radioSpace;
 }
 
 
+.errorlabel {
+    color: #ff003c;
+    font-family: radioSpace;
+}
 
+.fgtps {
+    color: #808080;
+    font-family: radioSpace;
+}
+    .fgtps:hover {
+        color: #f7b217;
+        transition: 1.5s;
+    }
+.rmbMe {
+    color: #808080;
+    font-family: radioSpace;
+}
+
+    .rmbMe:hover {
+        color: #19aebb;
+        transition: 1.5s;
+    }
+.footer-pos{
+    color: #808080;
+}

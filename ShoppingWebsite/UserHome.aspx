@@ -34,7 +34,7 @@
                         </button>
 
                     <a class="navbar-brand" href="Default.aspx"><span>
-                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CybeerShop</span>
+                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CyberShop</span>
                     </a>
     </div>
       

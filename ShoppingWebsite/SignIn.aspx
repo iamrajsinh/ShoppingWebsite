@@ -21,7 +21,7 @@
   <link href="css/Custom.css" rel="stylesheet" />
 
 </head>
-<body>
+<body class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
@@ -38,17 +38,17 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                    <a class="navbar-brand" href="Default.aspx"><span>
-                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CybeerShop</span>
+                    <a class="navbar-brand menu" href="Default.aspx">
+                        <span class="brandName">CyberShop</span>
                     </a>
     </div>
       
       <div class="collapse navbar-collapse">>
             <ul class="nav navbar-nav">
-                <li><a href="Default.aspx">HOME</a> </li>
-                <li><a href="#">ABOUT</a> </li>
-                <li><a href="#">CONTACT</a> </li>
-                <li class="drodown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
+                <li class="menu"><a href="Default.aspx">HOME</a> </li>
+                <li class="menu"><a href="#">ABOUT</a> </li>
+                <li class="menu"><a href="#">CONTACT</a> </li>
+                <li class="drodown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
                                 <li><a href="#">All Products</a></li>
@@ -114,12 +114,12 @@
                 </div>
 
 
-                <div class ="form-group">
+                <div class ="form-group   rmbMe">
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
                         <asp:CheckBox ID="CheckBox1" runat="server" />
-                        <asp:Label ID="Label3" CssClass =" control-label " runat="server" Text="Remember me"></asp:Label>
+                        <asp:Label ID="Label3" CssClass =" control-label" runat="server" Text="Remember me"></asp:Label>
                     </div>
                 </div>
                 
@@ -142,7 +142,7 @@
                 <div class ="form-group">
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
-                        <asp:HyperLink ID="HyForgotPass" runat="server" NavigateUrl="#">Forgot Password</asp:HyperLink>
+                        <asp:HyperLink ID="HyForgotPass" runat="server" NavigateUrl="#" CssClass="fgtps">Forgot Password</asp:HyperLink>
                        
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
-                        <asp:Label ID="lblError" CssClass ="text-danger " runat="server" ></asp:Label>
+                        <asp:Label ID="lblError" CssClass ="errorlabel" runat="server" ></asp:Label>
                     </div>
                 </div>
 
@@ -167,6 +167,8 @@
             </div>
         </div>
 
+        
+     
         <%--footer--%>
 
                     <hr />
@@ -180,6 +182,15 @@
             </div>
 
         </footer>
+
+
+
+
+
+            <div class="hi">
+            <p>hi</p>
+        </div>
+
 
     </form>
 
