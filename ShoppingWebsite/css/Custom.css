@@ -1,4 +1,38 @@
-﻿.{
+﻿.bgCustom {
+    background-color: #1c1c1c;
+}
+
+.menu {
+    font-family: radioSpace;
+    border: 2px solid #222222;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+}
+
+    .menu:hover {
+        color: aqua;
+    }
+
+
+
+.brandName {
+    font-family: radioSpace;
+    font-size: 20px;
+    color: #faf006;
+}
+
+@font-face {
+    font-family: radioSpace;
+    src: url(/assets/fonts/RadioSpace.woff);
+}
+
+.activemenu {
+    border-bottom-color: #faf006;
+}
+
+
+.{
     margin: 0;
     padding: 0;
 }
@@ -19,17 +53,19 @@
     margin: auto;
         
 }
-
 .footer-pos {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 900px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-}
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 900px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        color: #808080;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        font-family: radioSpace;
+    }
 
 
 

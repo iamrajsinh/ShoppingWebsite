@@ -13,10 +13,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link href="css/Custom.css" rel="stylesheet" />
-
+    <link href="css/UserHomeStylesheet.css" rel="stylesheet" />
 
 </head>
-<body>
+<body class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
@@ -33,41 +33,41 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                    <a class="navbar-brand" href="Default.aspx"><span>
-                        <img src="images/companyicons/CsLogo.jpg" alt="" height="30" /> CyberShop</span>
+                    <a class="navbar-brand" href="Default.aspx">
+                        <span class="brandName">CyberShop</span>
                     </a>
     </div>
       
-      <div class="collapse navbar-collapse">>
+      <div class="collapse navbar-collapse">    
             <ul class="nav navbar-nav">
-                <li class="active"><a href="Default.aspx">HOME</a> </li>
-                <li><a href="#">ABOUT</a> </li>
-                <li><a href="#">CONTACT</a> </li>
-                <li class="drodown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
+                <li class="activemenu menu"><a href="Default.aspx">HOME</a> </li>
+                <li class="menu"><a href="#">ABOUT</a> </li>
+                <li class="menu"><a href="#">CONTACT</a> </li>
+                <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
                                 <li><a href="#">All Products</a></li>
                                 <li role="separator" class="divider "></li>
-                                <li class="dropdown-header ">Men</li>
+                                <li class="dropdown-header ">Product category 1</li>
                                
-                                <li><a href="#">Shirts</a></li>
-                                <li><a href="#">Pants</a></li>
-                                <li><a href="#">Denims</a></li>
+                                <li><a href="#">ProSubCat 1</a></li>
+                                <li><a href="#">ProSubCat 2</a></li>
+                                <li><a href="#">ProSubCat 3</a></li>
                                 <li role="separator" class="divider "></li>
-                                <li class="dropdown-header ">Women</li>
+                                <li class="dropdown-header ">Product category 2</li>
                                 
-                                <li><a href="#">Top</a></li>
-                                <li><a href="#">Leggings</a></li>
-                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">ProSubCat 1</a></li>
+                                <li><a href="#">ProSubCat 2</a></li>
+                                <li><a href="#">ProSubCat 3</a></li>
                             </ul>
                         </li>
             </ul>
           
     
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right nbar">
                 <li>
                     
-                    <asp:Button ID="btnLogout" CssClass ="btn btn-warning btn-outline navbar-btn " runat="server" Text="Log out" onClick="btnlogout_Click"/>
+                    <asp:Button ID="btnLogout" CssClass ="btn btn-warning btn-outline navbar-btn menu" runat="server" Text="Log out" onClick="btnlogout_Click"/>
                    &nbsp;
                 </li>
                 
@@ -81,17 +81,16 @@
         <br />
         <br />
         <br />
-        <br />
-        <br />
+
 
         &nbsp; &nbsp;
-        <asp:Label ID="lblSuccess" runat="server" CssClass ="text-success "></asp:Label>
+        <asp:Label ID="lblSuccess" runat="server" CssClass="helloUser"></asp:Label>
 
          <%--footer--%>
 
-    <hr />
+    <hr class="hrlineuser"/>
     <footer>
-            <div class ="container ">
+            <div class ="container footer-pos ">
                
                 <p class ="pull-right "><a href ="#">&middot; &nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><a href="#"> Admin Login &nbsp; &nbsp;</a></p>  

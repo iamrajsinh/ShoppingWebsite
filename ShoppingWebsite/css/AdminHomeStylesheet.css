@@ -1,0 +1,25 @@
+﻿@font-face {
+    font-family: radioSpace;
+    src: url(/assets/fonts/RadioSpace.woff);
+}
+
+
+
+.helloAdmin {
+    color: #808080;
+    font-family: radioSpace;
+    font-size: 20px;
+}
+
+.hrlineadmin {
+    border-top: 2px solid #faf006;
+    margin-left: 10px;
+    margin-right: 1335px;
+    margin-top: 200px;
+}
+
+.menu {
+    font-family: radioSpace;
+    border: 2px solid #222222;
+    height: 50px;
+}

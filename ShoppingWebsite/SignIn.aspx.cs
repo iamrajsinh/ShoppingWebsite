@@ -51,9 +51,9 @@ namespace ShoppingWebsite
                         Response.Cookies["UNAME"].Value = tbUsername.Text;
                         Response.Cookies["UPWD"].Value = tbPassword.Text;
 
-                        Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(10);
+                        Response.Cookies["UNAME"].Expires = DateTime.Now.AddSeconds(30);
 
-                        Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(10);
+                        Response.Cookies["UPWD"].Expires = DateTime.Now.AddSeconds(30);
 
                     }
                     else

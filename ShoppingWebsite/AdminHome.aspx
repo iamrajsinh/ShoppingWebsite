@@ -6,7 +6,9 @@
     <br />
     <br />
 
-    <h2>&nbsp; &nbsp;Hello Admin</h2>
+    <p class="helloAdmin">Hello Admin</p>
+
+    <hr class="hrlineadmin"/>
 
 
 

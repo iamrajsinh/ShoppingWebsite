@@ -5,7 +5,7 @@
 }
 .menu {
     font-family: radioSpace;
-
+    height: 50px;
 }
     .menu:hover {
         color:aqua;
@@ -122,6 +122,7 @@
         color: #19aebb;
         transition: 1.5s;
     }
-.footer-pos{
+.footer-pos {
     color: #808080;
+    font-family: radioSpace;
 }

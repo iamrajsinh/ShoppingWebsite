@@ -33,40 +33,40 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                    <a class="navbar-brand" href="Default.aspx"><span>
+                    <a class="navbar-brand" href="Default.aspx">
                          <span class="brandName">CyberShop</span>
                     </a>
     </div>
       
-      <div class="collapse navbar-collapse">>
+      <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li  class="menu"><a href="Default.aspx">HOME</a> </li>
                 <li  class="menu"><a href="#">ABOUT</a> </li>
                 <li class="menu"><a href="#">CONTACT</a> </li>
-                <li class="drodown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
+                <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
                                 <li><a href="#">All Products</a></li>
                                 <li role="separator" class="divider "></li>
-                                <li class="dropdown-header ">Men</li>
+                                <li class="dropdown-header ">Product category 1</li>
                                
-                                <li><a href="#">Shirts</a></li>
-                                <li><a href="#">Pants</a></li>
-                                <li><a href="#">Denims</a></li>
+                                <li><a href="#">ProSubCat 1</a></li>
+                                <li><a href="#">ProSubCat 2</a></li>
+                                <li><a href="#">ProSubCat 3</a></li>
                                 <li role="separator" class="divider "></li>
-                                <li class="dropdown-header ">Women</li>
+                                <li class="dropdown-header ">Product category 2</li>
                                 
-                                <li><a href="#">Top</a></li>
-                                <li><a href="#">Leggings</a></li>
-                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">ProSubCat 1</a></li>
+                                <li><a href="#">ProSubCat 2</a></li>
+                                <li><a href="#">ProSubCat 3</a></li>
                             </ul>
                         </li>
             </ul>
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
-                <li><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in btn-primary btn-outline"></span> Login</a></li>
+                <li class="activemenu menu"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
+                <li class="menu"><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in btn-primary btn-outline"></span> Login</a></li>
             </ul>
         </div>
       </div>

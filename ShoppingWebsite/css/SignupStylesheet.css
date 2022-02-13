@@ -5,11 +5,9 @@
 
 .menu {
     font-family: radioSpace;
+    height: 50px;
 }
 
-    .menu:hover {
-        color: aqua;
-    }
 
 .brandName {
     font-family: radioSpace;
@@ -116,4 +114,7 @@
 
 .footer-pos {
     color: #808080;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: radioSpace;
 }
