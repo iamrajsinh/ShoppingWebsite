@@ -138,12 +138,12 @@
                 </div>
                 
 
-                <%--forget password--%>
+               
 
                 <div class ="form-group">
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
-                        <asp:HyperLink ID="HyForgotPass" runat="server" NavigateUrl="#" CssClass="fgtps">Forgot Password</asp:HyperLink>
+                        <asp:HyperLink ID="HyForgotPass" runat="server" NavigateUrl="~/ForgetPassword.aspx" CssClass="fgtps">Forgot Password</asp:HyperLink>
                        
                     </div>
                 </div>
@@ -169,10 +169,10 @@
         </div>
 
         
+                    <hr />
      
         <%--footer--%>
 
-                    <hr />
     <footer class="footer-pos">
             <div class ="container ">
                
@@ -187,10 +187,6 @@
 
 
 
-
-            <div class="hi">
-            <p>hi</p>
-        </div>
 
 
     </form>

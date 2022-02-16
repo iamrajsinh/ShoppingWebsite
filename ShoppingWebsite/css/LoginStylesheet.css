@@ -47,6 +47,8 @@
 
 .container {
     padding: 10px 25px 25px 25px;
+    align-self:center;
+    width:auto;
 }
 
 .form-control {
@@ -93,11 +95,6 @@
     }
 
 
-.hi {
-    margin: 200px 200px 100px 1600px;
-    font-size: 150px;
-    font-family: radioSpace;
-}
 
 
 .errorlabel {

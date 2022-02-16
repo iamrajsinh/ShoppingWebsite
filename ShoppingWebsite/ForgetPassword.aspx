@@ -1,28 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ShoppingWebsite.SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgetPassword.aspx.cs" Inherits="ShoppingWebsite.ForgetPassword" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sign Up | CyberShop</title>
+    <title>Forget password | CyberStore</title>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale="/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="css/Custom.css" rel="stylesheet" />
 
-    <link href="css/SignupStylesheet.css" rel="stylesheet" />
+
+    <link href="css/Custom.css" rel="stylesheet" />
+    <link href="css/ForgetPass.css" rel="stylesheet" />
+
 
 </head>
-<body  class="bgCustom">
+<body class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
-            <%--navigation bar--%>
-
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
+               <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
   <div class="container-fluid">
     <div class="navbar-header">
 
@@ -65,91 +65,76 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li class="activemenu menu"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
+                <li class="menu"><a href="SignUp.aspx"><span class="glyphicon glyphicon-user btn-primary btn-outline"></span> Sign Up</a></li>
                 <li class="menu"><a href="SignIn.aspx"><span class="glyphicon glyphicon-log-in btn-primary btn-outline"></span> Login</a></li>
             </ul>
         </div>
       </div>
     </div>
 
-
         </div>
 
-        <%--SignUp Form--%>
 
-        <div class ="center-page">
-        <div class="card">
+        <%--forgot password form--%>
+
+        <div class ="left">
+            <h4 class="fgt-note">Please enter your verified email address in order to receive the password reset link</h4>
+            <div class="card">
         <div class ="container ">
             <div class ="form-horizontal ">
 
-            <div class="col-xs-11">
-            <h2  class="signup-head">Sign Up</h2>
-             
-            </div>
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbUsername" runat="server" style="margin-left: 0px"   CssClass="form-control" placeholder="Enter your username "></asp:TextBox>
-                <br />
-            </div>
-
-            
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Enter your password"></asp:TextBox>
-                <br />
-            </div>
-
-
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbCPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Confirm your password"></asp:TextBox>
-                <br />
-            </div>
-
-
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbEmail" runat="server" CssClass="form-control" placeholder="Enter your email"></asp:TextBox>
-                <br />
                 
+                <h3 class="fgt-head">Send email at</h3>
+
+                 <div class ="form-group">
+                    <div class ="col-xs-11 ">
+
+                        <asp:TextBox ID="tbEmailID" CssClass="form-control" runat="server" placeholder="Enter your email"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" CssClass ="text-danger " ErrorMessage="Please enter your email" ControlToValidate="tbEmailID" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </div>
+                </div>
+
+                <div class ="form-group">
+                    <div class ="col-xs-7 "> </div>
+                    <div class ="col-xs-10 ">
+
+                        <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Send Email"/>
+                        
+                        
+                    </div>
+                </div>
+
+                
+
+                </div>
+            </div>
+                </div>
             </div>
 
 
-            <div class="col-xs-11">
-            <asp:TextBox ID="tbName" runat="server" CssClass="form-control" placeholder="Enter your name"></asp:TextBox>
-                <br />
-            </div>
+                
 
-            <div class="col-xs-11">
-                 <asp:Button ID="btnSignUp" CssClass="btn btn-primary" runat="server" Text="Sign up" OnClick="btnSignUp_Click" />
-            </div>
 
-            <div class="col-xs-11">
-                 <asp:Label ID="lblMsg"  CssClass ="errorlabel" runat="server" ></asp:Label>
-            </div>
-            
-            </div>
-            </div>
-                   </div>
 
-        </div>
-        
 
-        <%--footer--%>
- 
-    <footer class="footer-pos">
-            <%--<div class ="container ">--%>
+    </form>
+
+
+    <%--footer--%>
+
+        <footer class="footer-pos">
+            <div class ="container ">
                
  
                 <p>&copy;2022 CyberShop &middot; All rights reserved &middot; 
                     <a href ="#"> Terms & Conditions </a>&middot;
                     <a href ="#"> About </a>&middot;<a href ="#"> Contact </a> </p>
-            
+            </div>
 
         </footer>
 
 
 
-    </form>
 
 </body>
 </html>

@@ -58,6 +58,26 @@
     color: #808080;
 }
 
+
+#btnCB {
+    width: 250px;
+    background-color: #161616;
+    border-radius: 5px;
+    border-width: 2.5px;
+    color: #19aebb;
+    font-weight: bold;
+    font-family: radioSpace;
+    font-size: 20px;
+    border-color: #19aebb;
+}
+
+    #btnCB:hover {
+        transition: 0.5s;
+        box-shadow: #19aebb 300px 0px 0px 0px inset;
+        color: #161616;
+        font-weight: bold;
+    }
+
 #btnvm1 {
     width: 250px;
     background-color: #161616;

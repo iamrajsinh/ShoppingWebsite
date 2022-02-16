@@ -108,7 +108,7 @@
           <img src="images/MainSliderImages/iphoneAll13.jpg"  alt="And More" style="width:100%;">
           <div class="carousel-caption">
           <h3></h3>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
+          <p><a class="btn btn-lg btn-primary" id="btnCB" href="#" role="button">BUY NOW</a></p>
         </div>
 
       </div>

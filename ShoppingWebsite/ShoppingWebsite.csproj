@@ -97,11 +97,13 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="css\AdminHomeStylesheet.css" />
     <Content Include="css\Custom.css" />
+    <Content Include="css\ForgetPass.css" />
     <Content Include="css\LandingStylesheet.css" />
     <Content Include="css\LoginStylesheet.css" />
     <Content Include="css\SignupStylesheet.css" />
     <Content Include="css\UserHomeStylesheet.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ForgetPassword.aspx" />
     <Content Include="images\CompanyIcons\CsLogo.jpg" />
     <Content Include="images\CompanyIcons\CyberStoreLogo.png" />
     <Content Include="images\FeaturedCategory\gadgetsCategory.jpg" />
@@ -137,6 +139,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignIn.aspx.cs">

@@ -26,7 +26,7 @@
     border-radius: 7px;
     background-color: rgba(0,0,0,0.2);
     padding-left:0px;
-    padding-right 20px;
+    padding-right: 20px;
     width:330px;
 }
 
@@ -45,8 +45,10 @@
 
 
 .container {
+
     padding: 10px 25px 25px 25px;
-    width: 500px;
+    align-self: center;
+    width: auto;
 }
 
 .form-control {
@@ -98,12 +100,7 @@
     }
 
 
-.hi {
-    margin: 200px 200px 100px 1600px;
-    font-size: 150px;
-    font-family: radioSpace;
-}
-
+ 
 
 .errorlabel {
     color: #ff003c;
@@ -117,4 +114,5 @@
     margin-left: 50px;
     margin-right: 50px;
     font-family: radioSpace;
+    margin-bottom: 15px;
 }
