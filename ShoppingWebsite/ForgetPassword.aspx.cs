@@ -7,7 +7,8 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
-
+using System.Net.Mail;
+using System.Net;
 
 namespace ShoppingWebsite
 {
@@ -36,6 +37,35 @@ namespace ShoppingWebsite
 
                     SqlCommand cmd1 = new SqlCommand("Insert into ForgotPass(Id,Uid,RequestDateTime) values('" + myGUID + "','" + Uid + "',GETDATE())", con);
                     cmd1.ExecuteNonQuery();
+
+                    String ToEmailAddress = dt.Rows[0][3].ToString();
+                    String Username = dt.Rows[0][1].ToString();
+                    String EmailBody = "Hi, " + Username + ",<br/><br/>Click the link below to open your password reset page.<br/> <br/> http://localhost:1288/RecoverPassword.aspx?id=" + myGUID;
+
+
+                    MailMessage PassRecMail = new MailMessage(" ", ToEmailAddress);
+
+                    PassRecMail.Body = EmailBody;
+                    PassRecMail.IsBodyHtml = true;
+                    PassRecMail.Subject = "Reset Password";
+
+                    using (SmtpClient client = new SmtpClient())
+                    {
+                        client.EnableSsl = true;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = new NetworkCredential(" ", " ");
+                        client.Host = "smtp.gmail.com";
+                        client.Port = 587;
+                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+                        client.Send(PassRecMail);
+                    }
+
+
+
+
+
+
 
                     lblResetPassMsg.Text = "The password reset link has been sent into your given email, use it to reset your password";
                     tbEmailID.Text = string.Empty;
