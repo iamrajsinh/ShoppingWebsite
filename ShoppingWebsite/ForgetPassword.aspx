@@ -78,7 +78,7 @@
         <%--forgot password form--%>
 
         <div class ="left">
-            <h4 class="fgt-note">Please enter your verified email address in order to receive the password reset link</h4>
+            <h4 class="fgt-note" id="fgtnt">Please enter your verified email address in order to receive the password reset link</h4>
             <div class="card">
         <div class ="container ">
             <div class ="form-horizontal ">
@@ -98,8 +98,8 @@
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
-                        <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Send Email"/>
-                        
+                        <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Send Email" OnClick="btnResetPass_Click"/><br />
+                        <asp:Label ID="lblResetPassMsg" CssClass ="messageLbl" runat="server" ></asp:Label>
                         
                     </div>
                 </div>

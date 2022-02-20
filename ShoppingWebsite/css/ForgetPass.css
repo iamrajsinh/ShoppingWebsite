@@ -52,6 +52,7 @@
     font-family: radioSpace;
     font-size: 20px;
     border-color: #19aebb;
+    margin-bottom: 20px;
 }
 
     #btnResetPass:hover {
@@ -104,3 +105,9 @@
 }
 
 
+.messageLbl {
+    color: #46C016;
+    font-family: radioSpace;
+    font-size: 15px;
+
+}
