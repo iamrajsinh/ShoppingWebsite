@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgetPassword.aspx.cs" Inherits="ShoppingWebsite.ForgetPassword" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RecoverPassword.aspx.cs" Inherits="ShoppingWebsite.RecoverPassword" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Forget password | CyberStore</title>
+    <title>Reset Password</title>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale="/>
@@ -12,17 +12,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
     <link href="css/Custom.css" rel="stylesheet" />
-    <link href="css/ForgetPass.css" rel="stylesheet" />
-
+    <link href="css/RecoverPass.css" rel="stylesheet" />
 
 </head>
 <body class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
-               <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
+             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"">
   <div class="container-fluid">
     <div class="navbar-header">
 
@@ -74,53 +72,73 @@
 
         </div>
 
-
-        <%--forgot password form--%>
+                <%--Recover password form--%>
 
         <div class ="left">
-<%--            <h4 class="fgt-note" id="fgtnt">Please enter your verified email address in order to receive the password reset link</h4>--%>
+            
             <div class="card">
         <div class ="container ">
             <div class ="form-horizontal ">
 
                 
-                <h3 class="fgt-head">Send email at</h3>
+                <h3 class="fgt-head">Reset Password</h3>
+
+                <div class ="form-group">
+                    <div class ="col-xs-11 ">
+                    <asp:Label ID="lblmsg" CssClass ="msgLbl" runat="server" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    </div>
+
+                </div>
 
                  <div class ="form-group">
                     <div class ="col-xs-11 ">
 
-                        <asp:TextBox ID="tbEmailID" CssClass="form-control" TextMode="Email" runat="server" placeholder="Enter your email"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" CssClass ="text-danger " ErrorMessage="Please enter your email" ControlToValidate="tbEmailID" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="tbNewPass" CssClass="form-control" TextMode="Password" runat="server" placeholder="Enter new password"  Visible="False"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorNewPass" runat="server" CssClass ="text-danger " ErrorMessage="Please enter your new password" ControlToValidate="tbNewPass" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
+
+                <div class ="form-group">
+                    <div class ="col-xs-11 ">
+
+                        <asp:TextBox ID="tbConfirmPass" CssClass="form-control" TextMode="Password" runat="server" placeholder="Confirm new password"  Visible="False" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorConfirmPass" runat="server" CssClass ="text-danger " ErrorMessage="Please enter your new password" ControlToValidate="tbConfirmPass" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidatorPass" CssClass ="Text-danger" runat="server" ErrorMessage="Password doesn't match, please try again." ControlToCompare="tbConfirmPass" ForeColor="Red" ControlToValidate="tbNewPass"></asp:CompareValidator>
+                        
+                    </div>
+                </div>
+
 
                 <div class ="form-group">
                     <div class ="col-xs-7 "> </div>
                     <div class ="col-xs-10 ">
 
-                        <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Send Email"  OnClick="btnResetPass_Click"/><br />
+                        <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Done"  Visible="False" OnClick="btnResetPass_Click" /><br />
                         <asp:Label ID="lblResetPassMsg" CssClass ="messageLbl" runat="server" ></asp:Label>
                         
                     </div>
                 </div>
 
+                <div class ="form-group">
+                    <div class ="col-xs-11 ">
+                        <asp:Button ID="btnGoback" runat="server"  CssClass="btn btn-primary"  Text="Resend"  Visible="False" OnClick="btnGoback_Click" />
+                    </div>
+
+                </div>
+
                 
 
                 </div>
             </div>
                 </div>
             </div>
-
-
-                
 
 
 
 
     </form>
 
-
-    <%--footer--%>
+      <%--footer--%>
 
         <footer class="footer-pos">
             <div class ="container ">
@@ -132,9 +150,6 @@
             </div>
 
         </footer>
-
-
-
 
 </body>
 </html>

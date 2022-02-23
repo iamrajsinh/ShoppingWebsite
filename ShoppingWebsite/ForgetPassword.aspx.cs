@@ -40,20 +40,20 @@ namespace ShoppingWebsite
 
                     String ToEmailAddress = dt.Rows[0][3].ToString();
                     String Username = dt.Rows[0][1].ToString();
-                    String EmailBody = "Hi, " + Username + ",<br/><br/>Click the link below to open your password reset page.<br/> <br/> http://localhost:1288/RecoverPassword.aspx?id=" + myGUID;
+                    String EmailBody = "Hi, " + Username + ",<br/><br/>Click the link below to open your password reset page.<br/> <br/> https://localhost:44308/RecoverPassword.aspx?id=" + myGUID ;
 
 
-                    MailMessage PassRecMail = new MailMessage(" ", ToEmailAddress);
+                    MailMessage PassRecMail = new MailMessage("cybershop2077.rd@gmail.com", ToEmailAddress);
 
                     PassRecMail.Body = EmailBody;
                     PassRecMail.IsBodyHtml = true;
-                    PassRecMail.Subject = "Reset Password";
+                    PassRecMail.Subject = "Reset your CyberShop password";
 
                     using (SmtpClient client = new SmtpClient())
                     {
                         client.EnableSsl = true;
                         client.UseDefaultCredentials = false;
-                        client.Credentials = new NetworkCredential(" ", " ");
+                        client.Credentials = new NetworkCredential("cybershop2077.rd@gmail.com", "AspCyberShop2077");
                         client.Host = "smtp.gmail.com";
                         client.Port = 587;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
