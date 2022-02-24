@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddProducts.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
@@ -95,8 +96,10 @@
     <Content Include="bootstrap\js\bootstrap.esm.min.js" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\AddProduct.css" />
     <Content Include="css\AdminHomeStylesheet.css" />
     <Content Include="css\Custom.css" />
+    <Content Include="css\DefaultLandingPage.css" />
     <Content Include="css\ForgetPass.css" />
     <Content Include="css\LandingStylesheet.css" />
     <Content Include="css\LoginStylesheet.css" />
@@ -121,6 +124,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProducts.aspx.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProducts.aspx.designer.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminHome.aspx.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -212,6 +222,7 @@
     <Content Include="AdminMasterPage.Master" />
     <Content Include="assets\fonts\lucon.woff" />
     <Content Include="assets\fonts\Poppins-Regular.woff" />
+    <Content Include="assets\fonts\CubestMedium-w1jK9.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

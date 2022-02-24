@@ -13,6 +13,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="css/Custom.css" rel="stylesheet" />
     <link href="css/AdminHomeStylesheet.css" rel="stylesheet" />
+    <link href="css/AddProduct.css" rel="stylesheet" />
+
 </head>
 <body class="bgCustom">
     <form id="form1" runat="server">
@@ -62,10 +64,20 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-                <li class="menu"><a href="SignIn.aspx"><span class="glyphicon glyphicon-tasks btn-primary btn-outline"></span> Manage</a></li>
+<%--                <li class="menu"><a href="SignIn.aspx"><span class="glyphicon glyphicon-tasks btn-primary btn-outline"></span> Manage</a></li>--%>
+
+                <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<b
+                            class="caret"></b></a>
+                            <ul class="dropdown-menu ">
+
+                                <li><a href="AddProducts.aspx">Add product</a></li>
+
+                            </ul>
+                        </li>
+
                 <li>
                     
-                    <asp:Button ID="btnAdminLogout" CssClass ="btn btn-warning btn-outline navbar-btn menu" runat="server" Text="Log out" onClick="btnAdminlogout_Click"/>
+                    <asp:Button ID="btnAdminLogout" CssClass ="btn btn-warning btn-outline menu" runat="server" Text="Log out" onClick="btnAdminlogout_Click"/>
                    &nbsp;
                 </li>
 

@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="css/Custom.css" rel="stylesheet" />
-
+    <link href="css/DefaultLandingPage.css" rel="stylesheet" />
     <link href="css/LandingStylesheet.css" rel="stylesheet" />
 </head>
 <body  class="bgCustom">

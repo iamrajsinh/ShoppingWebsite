@@ -38,7 +38,7 @@ namespace ShoppingWebsite
                     else
                     {
                         lblmsg.Text = "Oops! It looks like your password reset link has been expired or invalid, please try again.";
-                        lblmsg.ForeColor = System.Drawing.Color.Red;
+
                     }
 
                 }
