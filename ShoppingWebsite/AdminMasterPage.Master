@@ -64,13 +64,17 @@
           
     
             <ul class="nav navbar-nav navbar-right">
-<%--                <li class="menu"><a href="SignIn.aspx"><span class="glyphicon glyphicon-tasks btn-primary btn-outline"></span> Manage</a></li>--%>
+
 
                 <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
 
                                 <li><a href="AddProducts.aspx">Add product</a></li>
+                                <li ><a href ="AddCategory.aspx">Add Category</a> </li>
+                                <li ><a href ="SubCategory.aspx">Add SubCategory</a> </li>
+                                <li ><a href ="AddCompany.aspx">Add Company</a> </li>
+
 
                             </ul>
                         </li>
@@ -96,7 +100,7 @@
       <%--footer--%>
 
                     
-    <footer class="footer-pos">
+    <footer class="footer-pos " style="margin-top: 200px;">
             <div class ="container ">
                
                 <p class ="pull-right "><a href ="#">&middot; &nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>

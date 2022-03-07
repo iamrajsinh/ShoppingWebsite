@@ -10,11 +10,11 @@
            
            
            <h2>Add Product</h2>
-              <hr />
+              <hr class="hrmain"/>
            <br />
 
                 <div class ="form-group">
-               <asp:Label ID="Label1" runat="server" CssClass ="col-md-2 control-label lblName" Text="Product Name"></asp:Label>
+               <asp:Label ID="Label1" runat="server" CssClass ="col-md-3 control-label lblName" Text="Product Name"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="tbProductName" CssClass ="form-control" runat="server"></asp:TextBox>
 
@@ -23,7 +23,7 @@
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label2" runat="server" CssClass ="col-md-2 control-label lblName" Text="Price"></asp:Label>
+               <asp:Label ID="Label2" runat="server" CssClass ="col-md-3 control-label lblName" Text="Price"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="tbPrice" CssClass ="form-control" runat="server"></asp:TextBox>
 
@@ -32,43 +32,43 @@
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label3" runat="server" CssClass ="col-md-2 control-label lblName" Text="Selling price"></asp:Label>
+               <asp:Label ID="Label3" runat="server" CssClass ="col-md-3 control-label lblName" Text="Selling price"></asp:Label>
                <div class ="col-md-3">
-                   <asp:TextBox ID="tbsellPrice" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="tbsellPrice"  CssClass ="form-control" runat="server"></asp:TextBox>
 
 
                </div>
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label4" runat="server" CssClass ="col-md-2 control-label lblName" Text="Company Name"></asp:Label>
+               <asp:Label ID="Label4" runat="server" CssClass ="col-md-3 control-label lblName" Text="Company Name"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddCompany" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddCompany" CssClass ="form-control" runat="server"></asp:DropDownList>
 
 
                </div>
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label5" runat="server" CssClass ="col-md-2 control-label lblName" Text="Category"></asp:Label>
+               <asp:Label ID="Label5" runat="server" CssClass ="col-md-3 control-label lblName" Text="Category"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddCategory" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddCategory" CssClass ="form-control" runat="server"></asp:DropDownList>
 
 
                </div>
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label6" runat="server" CssClass ="col-md-2 control-label lblName" Text="Sub-Category"></asp:Label>
+               <asp:Label ID="Label6" runat="server" CssClass ="col-md-3 control-label lblName" Text="Sub-Category"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddSubCategory" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddSubCategory" CssClass ="form-control" runat="server"></asp:DropDownList>
 
 
                </div>
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label7" runat="server" CssClass ="col-md-2 control-label lblName" Text="Description"></asp:Label>
+               <asp:Label ID="Label7" runat="server" CssClass ="col-md-3 control-label lblName" Text="Description"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="tbDescription" CssClass ="form-control" TextMode="MultiLine" runat="server"></asp:TextBox>
 
@@ -77,7 +77,7 @@
            </div>
 
                 <div class ="form-group">
-               <asp:Label ID="Label8" runat="server" CssClass ="col-md-2 control-label lblName" Text="Product details"></asp:Label>
+               <asp:Label ID="Label8" runat="server" CssClass ="col-md-3 control-label lblName" Text="Product details"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="tbPDetail" CssClass ="form-control" TextMode="MultiLine" runat="server"></asp:TextBox>
 
@@ -85,33 +85,78 @@
                </div>
            </div>
 
+                                <hr  class="hrother"/>
+
                 <div class ="form-group">
-               <asp:Label ID="Label9" runat="server" CssClass ="col-md-2 control-label lblName" Text="Upload Image"></asp:Label>
+               <asp:Label ID="Label9" runat="server" CssClass ="col-md-3 control-label lblName" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
-                   <asp:FileUpload ID="fuImg01" CssClass ="col-md-2 control-label" runat="server" />
+                   <asp:FileUpload ID="fuImg01" CssClass ="form-control" runat="server" />
 
 
                </div>
            </div>
 
                  <div class ="form-group">
-               <asp:Label ID="Label10" runat="server" CssClass ="col-md-2 control-label lblName" Text="Upload Image"></asp:Label>
+               <asp:Label ID="Label10" runat="server" CssClass ="col-md-3 control-label lblName" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
-                   <asp:FileUpload ID="fuImg02" CssClass ="col-md-2 control-label" runat="server" />
+                   <asp:FileUpload ID="fuImg02" CssClass ="form-control" runat="server" />
 
 
                </div>
            </div>
 
                  <div class ="form-group">
-               <asp:Label ID="Label11" runat="server" CssClass ="col-md-2 control-label lblName" Text="Upload Image"></asp:Label>
+               <asp:Label ID="Label11" runat="server" CssClass ="col-md-3 control-label lblName" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
-                   <asp:FileUpload ID="fuImg03" CssClass ="col-md-2 control-label" runat="server" />
+                   <asp:FileUpload ID="fuImg03" CssClass ="form-control" runat="server" />
+                   
+
+                   <br />
+                   
+
+
+               </div>s
+           </div>
+                <hr  class="hrother"/>
+
+                <div class ="form-group">
+               <asp:Label ID="Label12" runat="server" CssClass ="col-md-3 control-label lblName" Text="Free delivery"></asp:Label>
+               <div class ="col-md-3">
+                   <asp:CheckBox ID="cbFD" runat="server" />
 
 
                </div>
            </div>
 
+                <div class ="form-group">
+               <asp:Label ID="Label14" runat="server" CssClass ="col-md-3 control-label lblName" Text="Cash on delivey"></asp:Label>
+               <div class ="col-md-3">
+                   <asp:CheckBox ID="cbCOD" runat="server" />
+
+
+               </div>
+           </div>
+
+                <div class ="form-group">
+               <asp:Label ID="Label13" runat="server" CssClass ="col-md-3 control-label lblName" Text="7 days return"></asp:Label>
+               <div class ="col-md-3">
+                   <asp:CheckBox ID="cb7Ret" runat="server" />
+
+
+               </div>
+           </div>
+
+                <div class ="form-group">
+                    <div class ="col-md-2 "> </div>s
+                    <div class ="col-md-3 ">
+
+                        <asp:Button ID="btnAdd" CssClass ="btn btn-primary" runat="server" Text="Add" OnClick="btnAdd_Click"  />
+                        
+                        
+                    </div>
+                </div>
+
+                </div>
         </div>
       </div>
 

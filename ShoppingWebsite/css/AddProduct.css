@@ -24,6 +24,7 @@ h2 {
     transition: 0.3s;*/
     border-radius: 10px;
     margin-top: 70px;
+    margin-bottom: 100px;
     width: auto;
     /*background-color: rgba(0,0,0,0.2);*/
 
@@ -88,11 +89,19 @@ h2 {
     color: #808080;
     transition: 2s;
 
-    
-}
-hr {
-    border-top: 2px solid #faf006;
-    margin-left: 10px;
-    margin-right: 1335px;
-    margin-top: 100px;
+   }
+
+
+
+.hrmain {
+    border-top: 2px solid #808080;
+    margin-right:40px;
+    border-color: #faf006;
+   }
+
+
+
+.hrother {
+    border-top: 2px solid #808080;
+    margin-right: 40px;
 }

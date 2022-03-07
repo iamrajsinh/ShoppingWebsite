@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCategory.aspx" />
+    <Content Include="AddCompany.aspx" />
     <Content Include="AddProducts.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
@@ -96,6 +98,7 @@
     <Content Include="bootstrap\js\bootstrap.esm.min.js" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\AddCompaniesStylesheet.css" />
     <Content Include="css\AddProduct.css" />
     <Content Include="css\AdminHomeStylesheet.css" />
     <Content Include="css\Custom.css" />
@@ -120,10 +123,25 @@
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="SubCategory.aspx" />
     <Content Include="UserHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddProducts.aspx.cs">
       <DependentUpon>AddProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,6 +198,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategory.aspx.cs">
+      <DependentUpon>SubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubCategory.aspx.designer.cs">
+      <DependentUpon>SubCategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserHome.aspx.cs">
       <DependentUpon>UserHome.aspx</DependentUpon>
