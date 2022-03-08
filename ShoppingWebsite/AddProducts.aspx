@@ -67,6 +67,16 @@
                </div>
            </div>
 
+                 <div class ="form-group">
+               <asp:Label ID="Label15" runat="server" CssClass ="col-md-3 control-label lblName" Text="Quantity"></asp:Label>
+               <div class ="col-md-3">
+                   <asp:TextBox ID="tbQuantity"  CssClass ="form-control" runat="server"></asp:TextBox>
+
+
+               </div>
+           </div>
+
+
                 <div class ="form-group">
                <asp:Label ID="Label7" runat="server" CssClass ="col-md-3 control-label lblName" Text="Description"></asp:Label>
                <div class ="col-md-3">

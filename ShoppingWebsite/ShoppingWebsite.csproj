@@ -120,6 +120,8 @@
     <Content Include="images\MainSliderImages\iphoneAll13.jpg" />
     <Content Include="images\MainSliderImages\iphoneDarkBlue1.jpg" />
     <Content Include="images\MainSliderImages\iphoneLightBlue1.jpg" />
+    <Content Include="images\ProductImages\RedGear_joystick.jpg" />
+    <Content Include="images\ProductImages\SonyPs5_joystick.jfif" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
