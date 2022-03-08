@@ -43,7 +43,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label4" runat="server" CssClass ="col-md-3 control-label lblName" Text="Company Name"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddCompany" CssClass ="form-control" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddlCompany" CssClass ="form-control" runat="server"></asp:DropDownList>
 
 
                </div>
@@ -52,7 +52,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label5" runat="server" CssClass ="col-md-3 control-label lblName" Text="Category"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddCategory" CssClass ="form-control" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddlCategory" CssClass ="form-control" runat="server"  AutoPostBack ="true" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged"></asp:DropDownList>
 
 
                </div>
@@ -61,7 +61,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label6" runat="server" CssClass ="col-md-3 control-label lblName" Text="Sub-Category"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddSubCategory" CssClass ="form-control" runat="server"></asp:DropDownList>
+                   <asp:DropDownList ID="ddlSubCategory" CssClass ="form-control"  style="  border-radius: 5px;  background-color: #1c1c1c;" runat="server"></asp:DropDownList>
 
 
                </div>
@@ -122,7 +122,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label12" runat="server" CssClass ="col-md-3 control-label lblName" Text="Free delivery"></asp:Label>
                <div class ="col-md-3">
-                   <asp:CheckBox ID="cbFD" runat="server" />
+                   <asp:CheckBox ID="cbFD" CssClass ="form-control"  BorderStyle="None"  runat="server" />
 
 
                </div>
@@ -131,7 +131,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label14" runat="server" CssClass ="col-md-3 control-label lblName" Text="Cash on delivey"></asp:Label>
                <div class ="col-md-3">
-                   <asp:CheckBox ID="cbCOD" runat="server" />
+                   <asp:CheckBox ID="cbCOD" CssClass ="form-control"  BorderStyle="None"  runat="server" />
 
 
                </div>
@@ -140,7 +140,7 @@
                 <div class ="form-group">
                <asp:Label ID="Label13" runat="server" CssClass ="col-md-3 control-label lblName" Text="7 days return"></asp:Label>
                <div class ="col-md-3">
-                   <asp:CheckBox ID="cb7Ret" runat="server" />
+                   <asp:CheckBox ID="cb7Ret" CssClass ="form-control"  BorderStyle="None" runat="server" />
 
 
                </div>
