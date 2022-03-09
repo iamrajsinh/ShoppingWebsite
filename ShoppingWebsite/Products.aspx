@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="row" style="padding-top: 50px">
+        <asp:Repeater ID="rptrProducts" runat="server">
+            <ItemTemplate>
         <div class="col-sm-3 col-md-3">
             <div class="thumbnail">
                 <img src="images/ProductImages/RedGear_joystick.jpg" alt="RedgearJoystick" />
@@ -17,23 +19,12 @@
 
 
                 </div>
+                </div>
+                </div>
+                </ItemTemplate>
+            </asp:Repeater>
 
-
-
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-
-
-    </div>
+                </div>
 
 
 </asp:Content>
