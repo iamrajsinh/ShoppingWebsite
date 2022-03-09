@@ -106,6 +106,7 @@
     <Content Include="css\ForgetPass.css" />
     <Content Include="css\LandingStylesheet.css" />
     <Content Include="css\LoginStylesheet.css" />
+    <Content Include="css\ProductsStylesheet.css" />
     <Content Include="css\RecoverPass.css" />
     <Content Include="css\SignupStylesheet.css" />
     <Content Include="css\UserHomeStylesheet.css" />
@@ -122,6 +123,7 @@
     <Content Include="images\MainSliderImages\iphoneLightBlue1.jpg" />
     <Content Include="images\ProductImages\RedGear_joystick.jpg" />
     <Content Include="images\ProductImages\SonyPs5_joystick.jfif" />
+    <Content Include="Products.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
@@ -179,6 +181,13 @@
     <Compile Include="ForgetPassword.aspx.designer.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecoverPassword.aspx.cs">
       <DependentUpon>RecoverPassword.aspx</DependentUpon>
@@ -207,6 +216,13 @@
     </Compile>
     <Compile Include="SubCategory.aspx.designer.cs">
       <DependentUpon>SubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
     </Compile>
     <Compile Include="UserHome.aspx.cs">
       <DependentUpon>UserHome.aspx</DependentUpon>
@@ -251,6 +267,7 @@
     <Content Include="assets\fonts\Poppins-Regular.woff" />
     <Content Include="assets\fonts\CubestMedium-w1jK9.woff" />
     <None Include="packages.config" />
+    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
