@@ -160,7 +160,7 @@
                     <div class ="col-md-2 "> </div>s
                     <div class ="col-md-3 ">
 
-                        <asp:Button ID="btnAdd" CssClass ="btn btn-primary" runat="server" Text="Add" OnClick="btnAdd_Click"  />
+                        <asp:Button ID="btnAdd" CssClass ="AddBtn" runat="server" Text="Add" OnClick="btnAdd_Click"  />
                         
                         
                     </div>

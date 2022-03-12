@@ -14,22 +14,29 @@ namespace ShoppingWebsite
             if (Session["Username"] != null)
             {
                 btnLogout.Visible = true;
-                //btnLogin.Visible = false;
+                btnLogin.Visible = false;
                 lblSuccess.Text = " Hello <b>" + Session["Username"].ToString() + "</b>";
                 //Button1.Text = "Welcome: " + Session["Username"].ToString().ToUpper();
             }
             else
             {
-                
-               Response.Redirect("SignIn.aspx");
+
+                btnLogout.Visible = false;
+                btnLogin.Visible = true;
+                Response.Redirect("SignIn.aspx");
             }
 
         }
         protected void btnlogout_Click(object sender, EventArgs e)
         {
 
-            Response.Redirect("~/SignIn.aspx");
+            Response.Redirect("~/Default.aspx");
             Session["Username"] = null;
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SignIn.aspx");
         }
     }
 }

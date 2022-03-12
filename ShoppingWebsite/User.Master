@@ -20,7 +20,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body  class="bgCustom">
     <form id="form1" runat="server">
         <div>
 
@@ -70,6 +70,7 @@
             <ul class="nav navbar-nav navbar-right nbar">
                 <li>
                     
+                     <asp:Button ID="btnLogin" CssClass ="btn btn-primary btn-outline navbar-btn menu" runat="server" Text="Login" onClick="btnLogin_Click"/>
                     <asp:Button ID="btnLogout" CssClass ="btn btn-warning btn-outline navbar-btn menu" runat="server" Text="Log out" onClick="btnlogout_Click"/>
                    &nbsp;
                 </li>

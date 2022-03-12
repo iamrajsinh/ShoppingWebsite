@@ -45,7 +45,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-3 ">
 
-                        <asp:Button ID="btnAddSubCategory" CssClass ="btn btn-primary" runat="server" Text="Add" OnClick="btnAddSubCategory_Click"   />
+                        <asp:Button ID="btnAddSubCategory"  CssClass ="AddBtn" runat="server" Text="Add" OnClick="btnAddSubCategory_Click"   />
                         
                         
                     </div>

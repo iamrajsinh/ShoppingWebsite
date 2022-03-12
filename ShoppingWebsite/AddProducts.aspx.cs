@@ -18,7 +18,7 @@ namespace ShoppingWebsite
         {
             if (!IsPostBack)
             {
-                
+                                    
                 BindCompany();
                 BindCategory();
 

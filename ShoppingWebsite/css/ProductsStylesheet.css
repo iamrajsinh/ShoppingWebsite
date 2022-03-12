@@ -1,29 +1,76 @@
-﻿.menu {
+﻿.bgCustom {
+    background-color: #1c1c1c;
+}
+
+.menu {
     font-family: radioSpace;
-
-
-    padding-bottom: 0px;
-    height: 40px;
+    height: 50px;
 }
 
     .menu:hover {
         color: aqua;
     }
 
+.brandName {
+    font-family: radioSpace;
+    font-size: 20px;
+    color: #faf006;
+}
+
+@font-face {
+    font-family: radioSpace;
+    src: url(/assets/fonts/RadioSpace.woff);
+}
+
+
+
+
+.thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 7px;
+    border-style: none;
+    background-color: rgba(0,0,0,0.2);
+    border-right: 5px solid #161616;
+    border-left: 5px solid #161616;
+}
+
+    .thumbnail:hover {
+        box-shadow: 0px 8px 0 0 #faf006;
+        border-right: 0px solid #faf006;
+        border-left: none;
+    }
+
+        .thumbnail:hover .proName {
+            color: white;
+        }
+
+        .thumbnail:hover .procompany {
+            color: #ea00d9;
+        }
+        .thumbnail:hover .proPrice {
+            color: #0abdc6;
+        }
+        .thumbnail:hover .proPriceDiscount {
+            color: #D5D6D8;
+        }
 
 
 
 .procompany {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 15px;
     text-transform: uppercase;
+    font-size: 13px;
+    line-height: 17px;
     font-family: sans-serif;
+    color: gray;
 }
 
 .proName {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #D5D6D8;
+    
     font-family: sans-serif;
 }
 
@@ -32,6 +79,7 @@
     line-height: 17px;
     font-family: sans-serif;
     font-weight: 600;
+    color:white;
 }
 
 .proOgPrice {
@@ -47,5 +95,84 @@
     font-size: 13px;
     font-family: sans-serif;
     font-weight: 400;
-    color: deeppink;
+    color: #0abdc6;
+}
+
+.proNameView {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.proOgPriceView {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: gray;
+}
+.proPriceDiscountView {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #0abdc6;
+}
+
+.proPriceView {
+    font-size: 16px;
+    line-height: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #D5D6D8;
+}
+
+.divDet1 {
+    border-bottom: 0px solid #D5D6D8;
+    margin-bottom: 20px;
+}
+.divDet2 {
+    border-bottom: 1px solid #D5D6D8;
+    margin-bottom: 20px;   
+}
+.divDet3 {
+    border-bottom: 1px solid #D5D6D8;
+    margin-bottom: 20px;
+}
+    
+    
+
+.mainButton {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    min-height: 22px;
+    font-size: 13px;
+    min-width: 108px;
+    font-weight: 500;
+    background-color: #FF5722;
+    padding: 10px 15px;
+    border: 1px solid #FF5722;
+    color: #fff;
+    margin-bottom:20px;
+}
+.h5DetailsHead {
+    font-weight: 600;
+    color: #D5D6D8;
+}
+.h5DescriptionHead {
+    font-weight: 600;
+    color: #D5D6D8;
+}
+.divchecks {
+    font-weight: 600;
+    color: #D5D6D8;
+}
+
+
+p {
+    color: #D5D6D8;
+   
 }

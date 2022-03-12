@@ -114,7 +114,7 @@
                     <div class ="col-xs-10 ">
 
                         <asp:Button ID="btnResetPass" CssClass ="btn btn-primary" runat="server" Text="Done"  Visible="False" OnClick="btnResetPass_Click" /><br />
-                        <asp:Label ID="lblResetPassMsg" CssClass ="messageLbl" runat="server" ></asp:Label>
+                        <asp:Label ID="lblResetPassMsg" CssClass ="messageLbl" runat="server" Visibility="false"></asp:Label>
                         
                     </div>
                 </div>

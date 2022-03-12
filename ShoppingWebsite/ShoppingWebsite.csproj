@@ -121,9 +121,11 @@
     <Content Include="images\MainSliderImages\iphoneAll13.jpg" />
     <Content Include="images\MainSliderImages\iphoneDarkBlue1.jpg" />
     <Content Include="images\MainSliderImages\iphoneLightBlue1.jpg" />
+    <Content Include="images\ProductImages\NOTfound.png" />
     <Content Include="images\ProductImages\RedGear_joystick.jpg" />
     <Content Include="images\ProductImages\SonyPs5_joystick.jfif" />
     <Content Include="Products.aspx" />
+    <Content Include="ProductView.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
@@ -187,6 +189,13 @@
     </Compile>
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecoverPassword.aspx.cs">

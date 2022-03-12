@@ -59,6 +59,7 @@ h2 {
     border-radius: 5px;
     border-color: #808080;
     transition: 0s;
+    color: #ffffff;
 
 
     background-color: #1c1c1c;
@@ -104,4 +105,26 @@ h2 {
 .hrother {
     border-top: 2px solid #808080;
     margin-right: 40px;
+}
+
+.AddBtn {
+    margin-left:210px;
+    margin-top:30px;
+    margin-bottom:20px;
+    width: 250px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    border-width: 2.5px;
+    color: #19aebb;
+    font-weight: bold;
+    font-family: radioSpace;
+    font-size: 20px;
+    border-color: #19aebb;
+}
+
+.AddBtn:hover {
+    transition: 0.5s;
+    box-shadow: #19aebb 300px 0px 0px 0px inset;
+    color: #161616;
+    font-weight: bold;
 }

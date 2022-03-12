@@ -46,7 +46,7 @@
                 <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b
                             class="caret"></b></a>
                             <ul class="dropdown-menu ">
-                                <li><a href="#">All Products</a></li>
+                                <li><a href="Products.aspx">All Products</a></li>
                                 <li role="separator" class="divider "></li>
                                 <li class="dropdown-header ">Product category 1</li>
                                
